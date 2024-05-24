@@ -1,9 +1,10 @@
 import './App.css'
+import Bakgrunn from './Components/bakgrunn';
 
 function App() {
   return (
     <div>
-      <h1>HELLO WORLD</h1>
+      <Bakgrunn />
     </div>
   );
 }
