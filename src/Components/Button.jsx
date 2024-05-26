@@ -8,19 +8,19 @@ function Button({ obj }) {
     const førsteTeltRatio = 963/bildeBredde;
 
     const andreTeltRatio = 1797/bildeBredde;
-
+    
     const divPosition = {
         position: 'absolute',
-        top: obj.y,
-        left: (obj.x - buttonBredde/2),
+        top: obj.y/bildeBredde,
+        left: (obj.x/bildeBredde - buttonBredde/2),
     
     };
 
 
 
     return (
-        <div style={divPosition}>{console.log(divPosition.left)}
-            <button  class="bg-gray-300 opacity-0 hover:opacity-100 p-2 shadow-xl rounded-lg">
+        <div style={divPosition}>{console.log(window.innerWidth)}
+            <button  class="bg-gray-300 opacity-0 hover:opacity-100 p-2 shadow-xl rounded-xl">
                 <h1>
                     Teltnummer: {obj.teltNum}
                 </h1>
