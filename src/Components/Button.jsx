@@ -11,8 +11,8 @@ function Button({ obj }) {
     
     const divPosition = {
         position: 'absolute',
-        top: obj.y/bildeBredde,
-        left: (obj.x/bildeBredde - buttonBredde/2),
+        top: obj.y,
+        left: (førsteTeltRatio*window.innerWidth - buttonBredde/2),
     
     };
 
