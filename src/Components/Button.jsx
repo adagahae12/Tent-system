@@ -3,16 +3,24 @@ import React from 'react';
 function Button({ obj }) {
     const buttonBredde = 116;
 
-    const bildeBredde = 3508;
+    const bildeBredde = 3508; /*midlertidig var*/
 
-    const førsteTeltRatio = 963/bildeBredde;
+    const bildeHøyde = 1658; /*midlertidig var*/
 
-    const andreTeltRatio = 1797/bildeBredde;
+    const førsteTeltRatioX = 963/bildeBredde; /*midlertidig var*/
+
+    const andreTeltRatioX = 1797/bildeBredde; /*midlertidig var*/
     
+    const førsteTeltRatioY = 1389/bildeHøyde; /*midlertidig var*/
+
+    const andreTeltRatioY = 1065/bildeHøyde; /*midlertidig var*/
+
+
+
     const divPosition = {
         position: 'absolute',
-        top: obj.y,
-        left: (førsteTeltRatio*window.innerWidth - buttonBredde/2),
+        top: andreTeltRatioY*window.innerHeight,
+        left: (andreTeltRatioX*window.innerWidth - buttonBredde/2),
     
     };
 
