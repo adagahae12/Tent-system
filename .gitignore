@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 *.xcf
 .venv
+*__pycache__
