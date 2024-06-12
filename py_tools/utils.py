@@ -37,7 +37,7 @@ def find_midtpunkt(contours,f, index):
             
             f.write(f'{x},{y},{r}\n')
         else:
-            f.write(f'{x},{y}\n')
+            f.write(f'{x},{y},{0}\n')
 
 
 
